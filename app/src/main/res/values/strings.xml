@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Rectem Past Q&amp;A</string>
+    <string name="logo_name">Rectem </string>
+    <string name="welcome_name">WELCOME</string>
+    <string name="txtsty_name">What do you want to study today?</string>
+    <string name="sch1_name">School of Science &#038; Technology</string>
+    <string name="sch2_name">School of Management Studies</string>
+    <string name="sch3_name">School of Engineering Technology</string>
+    <string name="sch4_name">School of Environmental Studies</string>
+    <string name="course1_name">Computer Science</string>
+    <string name="course2_name">Science Laboratory Technology</string>
+    <string name="int_com">Introduction to computing </string>
+    <string name="headline">RECTEM REDEEMERS COLLEGE OF TECHNOLOGY AND MANAGEMENT <br />
+        SCHOOL OF SCIENCE AND TECHNOLOGY <br />
+        DEPARTMENT OF COMPUTER SCIENCE <br />
+        FIRST SEMESTER EXAMINATION 2020/2021 SESSION (FT)
+    </string>
+    <string name="sub_headline">
+        COURSE TITLE: INTRODUCTION TO COMPUTING <br />
+        CLASS: ND 1 (FULL TIME) <br />
+        COURSE CODE: COM 111 <br />
+        COURSE UNITS: 3 <br />
+        TIME ALLOWED: 3 HRS <br />
+        INSTRUCTION: Answer any Four (5) Question
+    </string>
+    <string name="qnumber">QUESTION ONE:</string>
+    <string name="question">
+        a. Itemize various technology in each of the Generations of Computer <br />
+        b. Compare and Contrast an Electronic Data Processing and the Mechanical Data processing <br />
+
+        c. Define the followings: <br />
+        1 Information        ii. Data processing        iii. Flowchart        iv. Algorithm        V Registers
+
+    </string>
+</resources>
