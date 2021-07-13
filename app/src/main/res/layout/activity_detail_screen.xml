@@ -28,7 +28,7 @@
           tools:ignore="ContentDescription" />
 
       <TextView
-          android:id="@+id/title_s2"
+          android:id="@+id/detail_title"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentTop="true"
@@ -95,210 +95,114 @@
               android:layout_height="wrap_content"
               android:layout_gravity="center"
               android:textAlignment="center"
-              android:fontFamily="@font/montserrat_medium"
+              android:fontFamily="@font/montserrat_bold"
               android:text="@string/headline"
               android:textColor="@color/black"
-              android:textSize="9sp" />
+              android:textSize="12sp"
+              android:lineHeight="20dp"
+              android:layout_marginTop="10dp"/>
 
           <TextView
               android:id="@+id/sub_head"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_gravity="start"
-              android:fontFamily="@font/montserrat_regular"
+              android:fontFamily="@font/montserrat_medium"
               android:text="@string/sub_headline"
               android:textColor="@color/black"
-              android:textSize="8sp"
-              android:paddingTop="30dp"/>
+              android:textSize="12sp"
+              android:paddingTop="30dp"
+              android:lineHeight="20dp"/>
 
           <LinearLayout
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
             <TextView
                 android:id="@+id/qnumber"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:paddingTop="30dp"/>
 
             <TextView
                 android:id="@+id/question"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:lineHeight="25dp"
+                android:layout_marginTop="20dp"/>
 
           </LinearLayout>
 
           <LinearLayout
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:paddingTop="30dp"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:lineHeight="25dp"
+                android:layout_marginTop="20dp"/>
 
           </LinearLayout>
 
           <LinearLayout
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:paddingTop="30dp"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
-
-          </LinearLayout>
-
-          <LinearLayout
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="30dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
-
-          </LinearLayout>
-
-          <LinearLayout
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="30dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
-
-          </LinearLayout>
-
-          <LinearLayout
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="30dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
-
-          </LinearLayout>
-
-          <LinearLayout
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/qnumber"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="30dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/question"
-                android:textColor="@color/black"
-                android:textSize="8sp"
-                android:paddingTop="0dp"/>
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:lineHeight="25dp"
+                android:layout_marginTop="20dp"/>
 
           </LinearLayout>
 

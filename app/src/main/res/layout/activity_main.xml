@@ -66,9 +66,10 @@
         android:layout_gravity="center">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/sch_st"
+            android:id="@+id/card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
             android:layout_gravity="fill"
@@ -81,21 +82,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
                 android:paddingTop="45dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="40dp"
-                android:paddingLeft="15dp">
+                android:paddingBottom="40dp">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/sch_stm"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/sch_scn"
-                    tools:ignore="ContentDescription"/>
+                    tools:ignore="ContentDescription" />
 
                 <TextView
+                    android:id="@+id/schoolOf_name"
                     android:layout_width="145dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -112,6 +114,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
             android:layout_gravity="fill"
@@ -122,20 +125,21 @@
             android:layout_marginBottom="30dp">
 
             <LinearLayout
+                android:id="@+id/management"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
                 android:paddingTop="45dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="40dp"
-                android:paddingLeft="15dp">
+                android:paddingBottom="40dp">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/sch_man"
-                    tools:ignore="ContentDescription"/>
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="145dp"
@@ -154,6 +158,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
             android:layout_gravity="fill"
@@ -162,20 +167,21 @@
             android:layout_margin="10dp">
 
             <LinearLayout
+                android:id="@+id/engineering"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
                 android:paddingTop="45dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="40dp"
-                android:paddingLeft="15dp">
+                android:paddingBottom="40dp">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/sch_tech"
-                    tools:ignore="ContentDescription"/>
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="145dp"
@@ -194,6 +200,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
             android:layout_gravity="fill"
@@ -202,20 +209,21 @@
             android:layout_margin="10dp">
 
             <LinearLayout
+                android:id="@+id/evironmental"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
                 android:paddingTop="45dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="40dp"
-                android:paddingLeft="15dp">
+                android:paddingBottom="40dp">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/sch_env"
-                    tools:ignore="ContentDescription"/>
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="145dp"

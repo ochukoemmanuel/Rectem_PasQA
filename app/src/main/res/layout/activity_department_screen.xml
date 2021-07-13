@@ -9,8 +9,8 @@
 
     <RelativeLayout
         android:id="@+id/rl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
@@ -19,15 +19,18 @@
         android:layout_marginRight="20dp"
         android:gravity="center">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btn_back"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:background="@drawable/left_arrow"
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/title_s2"
+            android:id="@+id/department_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -40,14 +43,17 @@
             android:layout_toEndOf="@+id/btn_back"
             android:layout_toRightOf="@+id/btn_back"
             android:fontFamily="@font/montserrat_medium"
-            android:text="/txtsty_name"
+            android:text="@string/txtsty_name"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/home"
             android:layout_width="18dp"
             android:layout_height="18dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
@@ -72,9 +78,12 @@
         android:rowCount="2">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/com_scn"
+            android:id="@+id/department_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
@@ -91,7 +100,7 @@
                 android:paddingRight="15dp"
                 android:paddingBottom="40dp">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/com_img"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -99,12 +108,13 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    android:id="@+id/department_name"
                     android:layout_width="145dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="/course1_name"
+                    android:text="@string/course1_name"
                     android:textAlignment="center"
                     android:textSize="12sp" />
 
@@ -115,6 +125,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
@@ -131,7 +144,7 @@
                 android:paddingRight="15dp"
                 android:paddingBottom="40dp">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/slt_img"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -144,7 +157,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="/desc1_name"
+                    android:text="@string/course2_name"
                     android:textAlignment="center"
                     android:textSize="12sp" />
 
