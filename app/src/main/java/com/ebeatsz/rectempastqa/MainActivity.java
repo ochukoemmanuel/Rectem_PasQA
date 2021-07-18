@@ -7,6 +7,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -36,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
         card_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Disable cardview and enable after 200ms
+                card_view.setEnabled(false);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        card_view.setEnabled(true);
+                    }
+                }, 200);
+
                 // Assigning a value to TextView
                 String name = schoolOf_name.getText().toString();
 

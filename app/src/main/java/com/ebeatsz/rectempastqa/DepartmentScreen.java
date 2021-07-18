@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -47,6 +48,16 @@ public class DepartmentScreen extends AppCompatActivity implements View.OnClickL
 
         switch (v.getId()) {
             case R.id.department_card:
+                //Disable department_card and enable after 200ms
+                department_card.setEnabled(false);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        department_card.setEnabled(true);
+                    }
+                }, 200);
+
                 String name = department_name.getText().toString();
 
                 i = new Intent(this, CourseScreen.class);
@@ -55,11 +66,13 @@ public class DepartmentScreen extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.btn_back:
+                finish();
+                break;
 
             case R.id.home:
-
-                i = new Intent(this, MainActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 break;
 
         }

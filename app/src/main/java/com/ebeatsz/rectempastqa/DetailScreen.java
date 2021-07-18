@@ -44,13 +44,13 @@ public class DetailScreen extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
 
             case R.id.btn_back:
-                i = new Intent(this, CourseScreen.class);
-                startActivity(i);
+                finish();
                 break;
 
             case R.id.home:
-                i = new Intent(this, MainActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 break;
         }
     }
